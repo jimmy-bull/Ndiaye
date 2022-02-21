@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/bulljimmy/Documents/GitHub/Ndiaye/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/bulljimmy/.gradle/caches/transforms-3/0e4c0c470ec06ce2b58b9f9021c1b466/transformed/media-1.2.1/res/values-v21/values-v21.xml",

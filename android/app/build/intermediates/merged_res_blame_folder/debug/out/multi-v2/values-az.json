@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
+            "outputFile": "/Users/bulljimmy/Documents/GitHub/Ndiaye/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az/values-az.xml",
             "map": [
                 {
                     "source": "/Users/bulljimmy/.gradle/caches/transforms-3/d18c74b1ec0940bec162e8605490b314/transformed/jetified-exoplayer-ui-2.13.2/res/values-az/values-az.xml",

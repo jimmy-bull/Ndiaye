@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
+            "outputFile": "/Users/bulljimmy/Documents/GitHub/Ndiaye/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-de/values-de.xml",
             "map": [
                 {
                     "source": "/Users/bulljimmy/.gradle/caches/transforms-3/d47104d7d3e76985fe28c350f9ff0f03/transformed/jetified-play-services-base-17.0.0/res/values-de/values.xml",
