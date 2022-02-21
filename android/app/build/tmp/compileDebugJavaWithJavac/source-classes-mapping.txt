@@ -1,0 +1,14 @@
+com/sporty/MainApplication.java
+ com.sporty.MainApplication
+ com.sporty.MainApplication$1
+com/sporty/MainActivity.java
+ com.sporty.MainActivity
+com/sporty/BuildConfig.java
+ com.sporty.BuildConfig
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/sporty/ReactNativeFlipper.java
+ com.sporty.ReactNativeFlipper
+ com.sporty.ReactNativeFlipper$1
+ com.sporty.ReactNativeFlipper$2
+ com.sporty.ReactNativeFlipper$2$1

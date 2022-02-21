@@ -1,0 +1,276 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sporty"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="30" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:7:3-75
+11-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:7:20-73
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:2:3-62
+12-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:2:20-60
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:3:3-64
+13-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:3:20-62
+14    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+14-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:4:3-77
+14-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:4:20-75
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:5:3-77
+15-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:5:20-75
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:6:3-68
+16-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:6:20-66
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:8:3-63
+17-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:8:20-61
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:9:3-78
+18-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:9:20-76
+19    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+19-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:10:3-78
+19-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:10:20-75
+20
+21    <queries>
+21-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:11:3-17:13
+22        <intent>
+22-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:12:5-16:14
+23            <action android:name="android.intent.action.VIEW" />
+23-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:13:7-58
+23-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:13:15-56
+24
+25            <category android:name="android.intent.category.BROWSABLE" />
+25-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:14:7-67
+25-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:14:17-65
+26
+27            <data android:scheme="https" />
+27-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:15:7-37
+27-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:15:13-35
+28        </intent>
+29        <!-- Query open documents -->
+30        <intent>
+30-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-21:18
+31            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+31-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-79
+31-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:21-76
+32        </intent>
+33        <intent>
+33-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-22:18
+34
+35            <!-- Required for picking images from the camera roll if targeting API 30 -->
+36            <action android:name="android.media.action.IMAGE_CAPTURE" />
+36-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-73
+36-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:21-70
+37        </intent>
+38        <intent>
+38-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-27:18
+39
+40            <!-- Required for picking images from the camera if targeting API 30 -->
+41            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+41-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-80
+41-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:21-77
+42        </intent>
+43    </queries>
+44
+45    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+45-->[com.facebook.flipper:flipper:0.54.0] /Users/bulljimmy/.gradle/caches/transforms-3/62ece1a98ef095db320a1cbbfb42e6fd/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:5-76
+45-->[com.facebook.flipper:flipper:0.54.0] /Users/bulljimmy/.gradle/caches/transforms-3/62ece1a98ef095db320a1cbbfb42e6fd/transformed/jetified-flipper-0.54.0/AndroidManifest.xml:16:22-73
+46    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+46-->[:expo-updates] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-79
+46-->[:expo-updates] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-updates/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-76
+47
+48    <uses-feature
+48-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:25:5-27:36
+49        android:name="android.hardware.camera"
+49-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:26:9-47
+50        android:required="false" />
+50-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:27:9-33
+51    <uses-feature
+51-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:28:5-30:36
+52        android:name="android.hardware.camera.autofocus"
+52-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:29:9-57
+53        android:required="false" />
+53-->[com.google.android:cameraview:1.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/bf56132afa473879bfb135d2c402747c/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:30:9-33
+54
+55    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+55-->[com.android.installreferrer:installreferrer:1.0] /Users/bulljimmy/.gradle/caches/transforms-3/22b6dbf44e88dd676aff6db587b4f125/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+55-->[com.android.installreferrer:installreferrer:1.0] /Users/bulljimmy/.gradle/caches/transforms-3/22b6dbf44e88dd676aff6db587b4f125/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+56
+57    <application
+57-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:3-38:17
+58        android:name="com.sporty.MainApplication"
+58-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:61-92
+59        android:allowBackup="true"
+59-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:207-233
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[androidx.core:core:1.3.0] /Users/bulljimmy/.gradle/caches/transforms-3/d15795c47be914585ca458b102a40944/transformed/core-1.3.0/AndroidManifest.xml:24:18-86
+61        android:debuggable="true"
+62        android:icon="@mipmap/ic_launcher"
+62-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:126-160
+63        android:label="@string/app_name"
+63-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:93-125
+64        android:requestLegacyExternalStorage="true"
+64-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:16-59
+65        android:roundIcon="@mipmap/ic_launcher_round"
+65-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:161-206
+66        android:theme="@style/AppTheme"
+66-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:234-265
+67        android:usesCleartextTraffic="true" >
+67-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:18:266-301
+68        <meta-data
+68-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:19:5-82
+69            android:name="expo.modules.updates.ENABLED"
+69-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:19:16-59
+70            android:value="true" />
+70-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:19:60-80
+71        <meta-data
+71-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:20:5-93
+72            android:name="expo.modules.updates.EXPO_SDK_VERSION"
+72-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:20:16-68
+73            android:value="43.0.0" />
+73-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:20:69-91
+74        <meta-data
+74-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:21:5-105
+75            android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH"
+75-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:21:16-80
+76            android:value="ALWAYS" />
+76-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:21:81-103
+77        <meta-data
+77-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:22:5-99
+78            android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS"
+78-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:22:16-79
+79            android:value="0" />
+79-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:22:80-97
+80        <meta-data
+80-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:23:5-128
+81            android:name="expo.modules.updates.EXPO_UPDATE_URL"
+81-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:23:16-67
+82            android:value="https://exp.host/@jimmybull/SportChallenge" />
+82-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:23:68-126
+83
+84        <activity
+84-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:5-35:16
+85            android:name="com.sporty.MainActivity"
+85-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:15-43
+86            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+86-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:77-154
+87            android:label="@string/app_name"
+87-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:44-76
+88            android:launchMode="singleTask"
+88-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:155-186
+89            android:screenOrientation="portrait"
+89-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:276-312
+90            android:theme="@style/Theme.App.SplashScreen"
+90-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:230-275
+91            android:windowSoftInputMode="adjustResize" >
+91-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:24:187-229
+92            <intent-filter>
+92-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:25:7-28:23
+93                <action android:name="android.intent.action.MAIN" />
+93-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:26:9-60
+93-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:26:17-58
+94
+95                <category android:name="android.intent.category.LAUNCHER" />
+95-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:27:9-68
+95-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:27:19-66
+96            </intent-filter>
+97            <intent-filter>
+97-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:29:7-34:23
+98                <action android:name="android.intent.action.VIEW" />
+98-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:13:7-58
+98-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:13:15-56
+99
+100                <category android:name="android.intent.category.DEFAULT" />
+100-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:31:9-67
+100-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:31:19-65
+101                <category android:name="android.intent.category.BROWSABLE" />
+101-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:14:7-67
+101-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:14:17-65
+102
+103                <data android:scheme="com.sporty" />
+103-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:15:7-37
+103-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:15:13-35
+104            </intent-filter>
+105        </activity>
+106        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+106-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:36:5-81
+106-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:36:15-79
+107        <activity
+107-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:37:5-124
+108            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+108-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:37:15-78
+109            android:theme="@style/Base.Theme.AppCompat" />
+109-->/Users/bulljimmy/Desktop/expo  2/safe/Sporty/android/app/src/main/AndroidManifest.xml:37:79-122
+110
+111        <provider
+111-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:9-34:20
+112            android:name="expo.modules.filesystem.FileSystemFileProvider"
+112-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-74
+113            android:authorities="com.sporty.FileSystemFileProvider"
+113-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:13-74
+114            android:exported="false"
+114-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-37
+115            android:grantUriPermissions="true" >
+115-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-47
+116            <meta-data
+116-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-33:70
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-67
+118                android:resource="@xml/file_system_provider_paths" />
+118-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-67
+119        </provider> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+120        <provider
+120-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:35:9-43:20
+121            android:name="expo.modules.imagepicker.ImagePickerFileProvider"
+121-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:36:13-76
+122            android:authorities="com.sporty.ImagePickerFileProvider"
+122-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:37:13-75
+123            android:exported="false"
+123-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:38:13-37
+124            android:grantUriPermissions="true" >
+124-->[:expo-image-picker] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-image-picker/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:39:13-47
+125            <meta-data
+125-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:13-33:70
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:32:17-67
+127                android:resource="@xml/image_picker_provider_paths" />
+127-->[:expo-file-system] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:33:17-67
+128        </provider>
+129
+130        <meta-data
+130-->[:expo-modules-core] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:89
+131            android:name="org.unimodules.core.AppLoader#react-native-headless"
+131-->[:expo-modules-core] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-79
+132            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+132-->[:expo-modules-core] /Users/bulljimmy/Desktop/expo  2/safe/Sporty/node_modules/expo-modules-core/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-86
+133
+134        <activity
+134-->[com.google.android.gms:play-services-base:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/d47104d7d3e76985fe28c350f9ff0f03/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+135            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+135-->[com.google.android.gms:play-services-base:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/d47104d7d3e76985fe28c350f9ff0f03/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+136            android:exported="false"
+136-->[com.google.android.gms:play-services-base:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/d47104d7d3e76985fe28c350f9ff0f03/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+137            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+137-->[com.google.android.gms:play-services-base:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/d47104d7d3e76985fe28c350f9ff0f03/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+138
+139        <meta-data
+139-->[com.google.android.gms:play-services-basement:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/51475fde4d23562144a5d1436682b46e/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+140            android:name="com.google.android.gms.version"
+140-->[com.google.android.gms:play-services-basement:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/51475fde4d23562144a5d1436682b46e/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+141            android:value="@integer/google_play_services_version" />
+141-->[com.google.android.gms:play-services-basement:17.0.0] /Users/bulljimmy/.gradle/caches/transforms-3/51475fde4d23562144a5d1436682b46e/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+142
+143        <service
+143-->[androidx.room:room-runtime:2.1.0] /Users/bulljimmy/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+144            android:name="androidx.room.MultiInstanceInvalidationService"
+144-->[androidx.room:room-runtime:2.1.0] /Users/bulljimmy/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+145            android:exported="false" />
+145-->[androidx.room:room-runtime:2.1.0] /Users/bulljimmy/.gradle/caches/transforms-3/8cc4149e3bbd3098633168f95e5c4ac7/transformed/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+146    </application>
+147
+148</manifest>
