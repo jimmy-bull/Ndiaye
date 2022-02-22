@@ -28,7 +28,7 @@ export default function CameraPerso({ route, navigation }) {
                 backgroundColor="black"
                 barStyle={"light-content"}
                  />
-            <Camera style={styles.camera} type={type}>
+            <Camera ratio={'16:9'} style={styles.camera} type={type}>
                 <View style={{ flex: 1, flexDirection: 'row', justifyContent: "space-between" }}>
                     <View style={styles.buttonContainer}>
                         <TouchableOpacity
@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
     },
     camera: {
         flex: 1,
-        justifyContent: 'space-evenly',
+      
     },
     buttonContainer: {
         backgroundColor: 'transparent',
