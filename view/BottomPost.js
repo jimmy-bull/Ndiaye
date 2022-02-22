@@ -25,7 +25,7 @@ const BottomPost = ({ description, id, color, imageDataState, navigation }) => {
 
         }}>
             <TouchableOpacity onPress={() => navigation.navigate('Comment')}>
-                <Text numberOfLines={1} style={{ paddingRight: 10, paddingLeft: 10, color: "black", marginTop: 20, marginBottom: 10 }}>{description}</Text>
+                <Text numberOfLines={1} style={{ paddingRight: 10, paddingLeft: 10, color: "gray", marginTop: 20, marginBottom: 10 }}>{description}</Text>
             </TouchableOpacity>
             <View style={{
                 borderColor: 'white',

@@ -42,8 +42,6 @@ export default function PostBody({ data, otherData, navigation }) {
                                     <VideoPlayer
                                         source={{ uri: images.image }}
                                         style={{ aspectRatio: images.imageDimension, width: Dimensions.get('window').width, }}
-
-                                        // onProgress={(data) => videoRefCurrentTime[id] = data.currentTime}
                                         toggleResizeModeOnFullscreen={false}
                                         rate={1.0}
                                         paused={true}
@@ -53,9 +51,7 @@ export default function PostBody({ data, otherData, navigation }) {
                                         disableSeekbar
                                         disablePlayPause
                                         disableFullscreen
-                                        resizeMode='cover'
-                                    // poster='https://ik.imagekit.io/pgveb8hjgfqg/sumaid-pal-singh-bakshi-BqeMgL8PWHE-unsplash_Q6l78vd-ezO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1643204476134'
-                                    // posterResizeMode='cover'
+                                        resizeMode='cover'       
                                     />
                                     <View style={{ position: "absolute", alignSelf: "center", justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.2)', width: '100%', height: '100%' }}>
                                         <TouchableOpacity onPress={() => navigation.navigate('fullscreenVideo', {

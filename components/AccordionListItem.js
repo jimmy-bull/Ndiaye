@@ -51,7 +51,7 @@ const AccordionListItem = ({ title, children }) => {
                 <View style={styles.titleContainer}>
                     <Text>{title}</Text>
                     <Animated.View style={{ transform: [{ rotateZ: arrowAngle }] }}>
-                        <MaterialIcons name="keyboard-arrow-down" size={20} color="black" />
+                        <MaterialIcons name="keyboard-arrow-down" size={20} color="gray" />
                     </Animated.View>
                 </View>
             </TouchableWithoutFeedback>

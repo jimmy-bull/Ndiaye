@@ -15,6 +15,7 @@ import {
 const { width, height } = Dimensions.get("window");
 import Icon from 'react-native-vector-icons/Feather';
 import IconAnt from 'react-native-vector-icons/AntDesign';
+import { Ionicons } from '@expo/vector-icons';
 
 const styles = StyleSheet.create({
     backgroundVideo: {
@@ -67,13 +68,12 @@ const styles = StyleSheet.create({
 });
 export default function SignUp({ navigation }) {
     return (
-        <SafeAreaView style={{flex:1}}>
-        <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} style={{ flex: 1 }}>
-           
+        <SafeAreaView style={{ flex: 1 }}>
+            <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} style={{ flex: 1 }}>
                 <ScrollView contentContainerStyle={{ flexGrow: 1, justifyContent: "space-evenly", padding: 20, backgroundColor: "white", paddingTop: 0, }}>
                     <Text style={{ alignSelf: "center", fontSize: 20, color: 'gray', marginBottom: 20, marginTop: 20 }}>Inscrivez-vous</Text>
                     <View style={{ flexDirection: "row", justifyContent: "center" }}>
-                        <View style={{ backgroundColor: "#f9f9f9", width: 70, height: 70, margin: 10, borderRadius: 35, justifyContent: "center", marginTop: 0, marginBottom: 0 }}>
+                        <View style={{ backgroundColor: "whitesmoke", width: 70, height: 70, margin: 10, borderRadius: 35, justifyContent: "center", marginTop: 0, marginBottom: 0 }}>
                             <IconAnt name="googleplus" style={{ alignSelf: "center" }} size={25} color={'red'} />
                         </View>
                         <View style={{ backgroundColor: "#4399fe", width: 70, height: 70, margin: 10, borderRadius: 35, justifyContent: "center", marginTop: 0, marginBottom: 0 }}>
@@ -109,6 +109,24 @@ export default function SignUp({ navigation }) {
                                 placeholderTextColor={"gray"}
                             />
                         </View>
+                        <Text style={{ padding: 10, paddingTop: 0, color: "gray" }}>Pays</Text>
+                        <View style={styles.inputParent}>
+                            <Ionicons name="globe-outline" size={20} style={{ position: "absolute", padding: 10, }} />
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Pays"
+                                placeholderTextColor={"gray"}
+                            />
+                        </View>
+                        <Text style={{ padding: 10, paddingTop: 0, color: "gray" }}>Ville</Text>
+                        <View style={styles.inputParent}>
+                            <Ionicons name="locate-outline" size={20} style={{ position: "absolute", padding: 10, }} />
+                            <TextInput
+                                style={styles.input}
+                                placeholder="Ville"
+                                placeholderTextColor={"gray"}
+                            />
+                        </View>
                         <Text style={{ padding: 10, paddingTop: 0, color: "gray" }}>Mot de passe</Text>
                         <View style={styles.inputParent}>
 
@@ -135,8 +153,8 @@ export default function SignUp({ navigation }) {
                         </TouchableOpacity>
                     </View>
                 </ScrollView>
-          
-        </KeyboardAvoidingView>
+
+            </KeyboardAvoidingView>
         </SafeAreaView>
 
     );

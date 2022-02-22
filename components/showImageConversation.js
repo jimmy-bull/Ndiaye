@@ -1,13 +1,10 @@
 import {
-    StyleSheet,
     View,
     Dimensions,
-    Text,
-    TextInput,
     TouchableOpacity,
     Image,
-    ScrollView,
-    SafeAreaView, ImageBackground
+    SafeAreaView,
+    StatusBar
 } from 'react-native';
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/Feather';
@@ -16,6 +13,11 @@ export default function ShowImageConversation({ navigation, route }) {
     const { imageLink, imageRatio } = route.params;
     return (
         <SafeAreaView style={{ backgroundColor: "black", flex: 1, }}>
+            <StatusBar
+                animated={true}
+                backgroundColor="black"
+                barStyle={'light-content'}
+            />
             <View style={{ flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: 20 }}>
                 <View style={{ flexDirection: "row", alignItems: "center" }}>
                     <TouchableOpacity onPress={() => navigation.goBack()}>

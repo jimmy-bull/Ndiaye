@@ -71,7 +71,7 @@ export default function CurrentTeam({ data, navigation }) {
                             marginTop: 10, borderRadius: 5, alignSelf: 'center',
                             justifyContent: 'center', flexDirection: "row", backgroundColor: 'whitesmoke', alignItems: 'center'
                         }}>
-                            <Text style={{ color: 'gray', margin: 5, fontWeight: 'bold', marginTop: 0, marginBottom: 0 }}>Demande de match</Text>
+                            <Text style={{ color: 'gray', margin: 5, marginTop: 0, marginBottom: 0 }}>Demande de match</Text>
                             <Ionicons style={{ color: 'gray', }} name="game-controller-outline" size={20} color="black" />
                         </TouchableOpacity >
                         <TouchableOpacity onPress={() => navigation.navigate('Integration')} style={{
@@ -81,7 +81,7 @@ export default function CurrentTeam({ data, navigation }) {
                             alignItems: 'center'
 
                         }}>
-                            <Text style={{ color: 'gray', margin: 5, fontWeight: 'bold', marginTop: 0, marginBottom: 0 }}>Voir les demandes d'intégration</Text>
+                            <Text style={{ color: 'gray', margin: 5, marginTop: 0, marginBottom: 0 }}>Voir les demandes d'intégration</Text>
                             {/* <Ionicons style={{ color: 'gray', }} name='add-circle-outline' size={20} color={'black'} /> */}
                         </TouchableOpacity>
                     </View>
@@ -90,10 +90,10 @@ export default function CurrentTeam({ data, navigation }) {
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                         <View style={{ flex: 1, }}>
                             <View style={{ backgroundColor: 'white', marginBottom: 20 }}>
-                                <Text style={{ margin: 5, alignSelf: 'center' }}>Paris Saint Germain - FootBall - <Ionicons name='football' size={15} color={'#b07c6d'} /></Text>
+                                <Text style={{ margin: 5, alignSelf: 'center', color: 'gray' }}>Paris Saint Germain - FootBall - <Ionicons name='football' size={15} color={'#b07c6d'} /></Text>
                             </View>
                             <AccordionListItem title={
-                                <> <Ionicons style={{ margin: 5 }} name='trophy-outline' size={20} color={'#b07c6d'} />  <Text style={{ fontSize: 16, backgroundColor: 'white' }}>Palmarès</Text>  </>}>
+                                <> <Ionicons style={{ margin: 5 }} name='trophy-outline' size={20} color={'#b07c6d'} />  <Text style={{ fontSize: 16, backgroundColor: 'white', color: 'gray' }}>Palmarès</Text>  </>}>
                                 <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
                                     <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                                         <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Printemps 2021</Text>
@@ -264,30 +264,30 @@ export default function CurrentTeam({ data, navigation }) {
                     </View>
                     <View style={{ justifyContent: "center", marginTop: 20, }}>
                         <View style={{ alignItems: 'center' }}>
-                            <Text style={{ color: 'black', marginBottom: 10, }}>Marseille <Text style={{ fontWeight: 'bold' }}>14</Text></Text>
+                            <Text style={{ color: 'black', marginBottom: 10, color: 'gray' }}>Marseille 14</Text>
                         </View>
                         <View style={{
                             justifyContent: 'center', alignSelf: 'center',
                             alignItems: 'center'
                         }}>
-                            <Text style={{ fontSize: 16, color: 'darkgray', fontWeight: 'bold' }}>Trophées remportés</Text>
+                            <Text style={{ color: 'black', fontWeight: '700' }}>Trophées remportés</Text>
                             <View style={{ marginTop: 10, flexDirection: 'row' }}>
                                 <View style={{ alignItems: 'center' }}>
-                                    <Text style={{ fontSize: 15, color: 'black', fontWeight: 'bold' }}>1</Text>
+                                    <Text style={{ fontSize: 15, color: 'gray' }}>1</Text>
                                     <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#bdbfba'} />
                                 </View>
                                 <View style={{ alignItems: 'center' }}>
-                                    <Text style={{ fontSize: 15, color: 'black', fontWeight: 'bold' }}>2</Text>
+                                    <Text style={{ fontSize: 15, color: 'gray' }}>2</Text>
                                     <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#ffd700'} />
                                 </View>
 
                                 <View style={{ alignItems: 'center' }}>
-                                    <Text style={{ fontSize: 15, color: 'black', fontWeight: 'bold', fontWeight: 'bold' }}>0</Text>
+                                    <Text style={{ fontSize: 15, color: 'gray' }}>0</Text>
                                     <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#cac5bf'} />
                                 </View>
 
                                 <View style={{ alignItems: 'center' }}>
-                                    <Text style={{ fontSize: 15, color: 'black', fontWeight: 'bold' }}>2</Text>
+                                    <Text style={{ fontSize: 15, color: 'gray' }}>2</Text>
                                     <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#b07c6d'} />
                                 </View>
                             </View>
@@ -296,7 +296,7 @@ export default function CurrentTeam({ data, navigation }) {
                 </View>
                 <View style={{ padding: 20 }}>
                     <View style={{ alignItems: 'center' }}>
-                        <Text style={{ color: 'black', marginBottom: 10 }}>Membres de l'équipe</Text>
+                        <Text style={{ color: 'black', marginBottom: 10, fontWeight: '700' }}>Membres de l'équipe</Text>
                     </View>
                     <View style={{ flexDirection: 'row', flex: 1, flexWrap: "wrap", marginTop: 20, justifyContent: 'space-between' }}>
                         <TouchableOpacity style={{
@@ -310,7 +310,7 @@ export default function CurrentTeam({ data, navigation }) {
                                     uri: 'https://img.search.brave.com/_r2t_w-DWC8bmp8SbpccPFDJUwP8MAzg__yMxPa9R0g/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/emJydXNoY2VudHJh/bC5jb20vdXBsb2Fk/cy9kZWZhdWx0L29w/dGltaXplZC80WC81/L2QvMC81ZDAzNmUx/YjdjNDAxZDQ4MWZk/MzI0YWUzMmIyYzQy/ZjU3OGJmYzNhXzJf/MTIwMHgxMjAwLmpw/ZWc',
                                     cache: 'default'
                                 }} />
-                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, fontWeight: '700' }}>Bull Jimmy</Text>
+                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, }}>Bull Jimmy</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{
                             marginTop: 0,
@@ -323,7 +323,7 @@ export default function CurrentTeam({ data, navigation }) {
                                     uri: 'https://img.search.brave.com/O2Xcf8m__4vGq_EPnenofeBStw5OLqr_ruI-_KgTViE/rs:fit:1200:1024:1/g:ce/aHR0cHM6Ly9zdGF0/aWMuYmlsbGJvYXJk/LmNvbS9maWxlcy9t/ZWRpYS9wdXNoYS10/LW1hcmNoLTIwMTYt/YmlsbGJvYXJkLTE1/NDgtY29tcHJlc3Nl/ZC5qcGc',
                                     cache: 'default'
                                 }} />
-                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, fontWeight: '700' }}>Ello yannick</Text>
+                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, }}>Ello yannick</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={{
                             marginTop: 0,
@@ -336,46 +336,46 @@ export default function CurrentTeam({ data, navigation }) {
                                     uri: 'https://img.search.brave.com/EzlF3IYiCA028k3EXQCA0AcIHlIpq1-s85LI0WSiKWg/rs:fit:440:440:1/g:ce/aHR0cHM6Ly9maWxl/MS5jbG9zZXJtYWcu/ZnIvdmFyL2Nsb3Nl/cm1hZy9zdG9yYWdl/L2ltYWdlcy9iaW8t/cGVvcGxlL2Jpb2dy/YXBoaWUta2FueWUt/d2VzdC0xMTI0MjEv/ODE4ODI5LTEtZnJl/LUZSL0thbnllLVdl/c3QuanBnP2FsaWFz/PWV4YWN0MTAyNHg3/NjhfbA',
                                     cache: 'default'
                                 }} />
-                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, fontWeight: '700' }}>Jean marc</Text>
+                            <Text style={{ color: 'darkgray', marginBottom: 10, alignItems: 'center', marginTop: 5, }}>Jean marc</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
 
                 <View style={{ margin: 20, marginTop: 0, marginBottom: 10, flexDirection: 'row', alignItems: 'center' }}>
-                    <Text style={{ fontWeight: 'bold' }}>Ponctualité:</Text>
+                    <Text style={{ color: 'gray' }}>Ponctualité:</Text>
                     <View style={{ marginLeft: 10, flexDirection: 'row' }}>
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star-half'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star-outline'
                             size={18} color={'lightgray'} />
                     </View>
                 </View>
                 <View style={{ margin: 20, marginTop: 0, flexDirection: 'row', alignItems: 'center' }}>
-                    <Text style={{ fontWeight: 'bold' }}>FAir play:</Text>
+                    <Text style={{ color: 'gray' }}>FAir play:</Text>
                     <View style={{ marginLeft: 10, flexDirection: 'row' }}>
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star-half'
-                            size={18} color={'yellow'} />
+                            size={18} color={'#ffd700'} />
                         <Ionicons style={{ marginTop: 0 }}
                             name='star-outline'
                             size={18} color={'lightgray'} />
@@ -398,8 +398,6 @@ export default function CurrentTeam({ data, navigation }) {
                     flex: 1,
                     flexDirection: 'row'
                 }}>
-
-
                     <View style={{ backgroundColor: 'white', padding: 20, flex: 1, borderRadius: 5 }}>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                             <Text style={{ fontWeight: 'bold' }}>Demande de Match</Text>
@@ -408,16 +406,16 @@ export default function CurrentTeam({ data, navigation }) {
                             </TouchableOpacity>
                         </View>
                         <View>
-                            <TouchableOpacity onPress={showDatepicker} style={{ alignSelf: 'center', flexDirection: 'row', marginTop: 10, alignItems: 'center' }}>
+                            <TouchableOpacity onPress={showDatepicker} style={{  flexDirection: 'row', marginTop: 10, alignItems: 'center', }}>
                                 <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Date:</Text>
-                                <View style={{ marginLeft: 5 }}>
-                                    <Text>{date}</Text>
+                                <View style={{ marginLeft: 20 }}>
+                                    <Text style={{color:'gray'}}>{date}</Text>
                                 </View>
                             </TouchableOpacity>
-                            <TouchableOpacity onPress={showTimepicker} style={{ alignSelf: 'center', flexDirection: 'row', marginTop: 10, alignItems: 'center' }}>
+                            <TouchableOpacity onPress={showTimepicker} style={{  flexDirection: 'row', marginTop: 10, alignItems: 'center' }}>
                                 <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Heures:</Text>
                                 <View style={{ marginLeft: 5 }}>
-                                    <Text>{hours}</Text>
+                                    <Text style={{color:'gray'}}>{hours}</Text>
                                 </View>
                             </TouchableOpacity>
                             <View style={{ alignSelf: 'center', flexDirection: 'row', marginTop: 10, alignItems: 'center', }}>

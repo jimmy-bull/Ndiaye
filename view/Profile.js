@@ -204,32 +204,28 @@ export default function Profile({ navigation }) {
         console.log(result);
         if (!result.cancelled) {
             setprofilPhoto(result.uri);
-            // navigation.navigate('ImageModificator', {
-            //     image: result
-            // })
         }
-
     };
     const profilPhotoElementFinal = useMemo(() => profilPhotoElement(profilPhoto), [profilPhoto]);
     return (
-        <SafeAreaView style={{ padding: 20, flex: 1, backgroundColor: 'white', paddingTop: 5 }}>
+        <SafeAreaView style={{ flex: 1, backgroundColor: 'white', paddingTop: 5, }}>
             <ScrollView showsVerticalScrollIndicator={false} style={{ flex: 1 }}>
                 <StatusBar
                     animated={true}
                     backgroundColor="white"
                     barStyle={"dark-content"}
                 />
-                <View style={{ flexDirection: 'row', alignItems: "center", justifyContent: "space-between" }}>
+                <View style={{ paddingRight: 20, paddingLeft: 20, paddingBottom: 20, flexDirection: 'row', alignItems: "center", justifyContent: "space-between" }}>
                     <View>
-                        <Text style={{ marginTop: 10, color: 'black' }}>Marseille <Text style={{ fontWeight: 'bold' }}>14</Text></Text>
+                        <Text style={{ marginTop: 10, color: 'gray' }}>Marseille 14</Text>
                         <View style={{ flex: 1, borderStyle: 'solid', borderWidth: 0.5, height: 0 }}></View>
                     </View>
                     <View>
-                        <Text style={{ marginTop: 10, fontWeight: '700', color: 'black' }}>Bull Jimmy</Text>
+                        <Text style={{ marginTop: 10, color: 'gray' }}>Bull Jimmy</Text>
                         <View style={{ flex: 1, borderStyle: 'solid', borderWidth: 0.5, height: 0 }}></View>
                     </View>
                 </View>
-                <View style={{ marginTop: 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', justifyContent: 'space-between' }}>
+                <View style={{ paddingRight: 20, paddingLeft: 20, marginTopight: 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', justifyContent: 'space-between' }}>
                     {profilPhotoElementFinal}
                     <View>
                         <TouchableOpacity onPress={() => navigation.navigate('MessageResponse', {
@@ -257,282 +253,303 @@ export default function Profile({ navigation }) {
                         </TouchableOpacity>
                     </View>
                 </View>
-                <View style={{ flexDirection: 'row', justifyContent: "space-between", alignItems: "center", }}>
+                <View style={{ paddingRight: 20, paddingLeft: 20, flexDirection: 'row', justifyContent: "space-between", alignItems: "center", }}>
                     <View style={{
                         justifyContent: 'center', alignSelf: 'center', marginTop: 20, paddingTop: 10,
                         paddingBottom: 10, alignItems: 'center'
                     }}>
-                        <Text style={{ fontSize: 16, color: 'black', fontWeight: '600' }}>Trophées remportés</Text>
+                        <Text style={{ color: 'black', fontWeight: '700' }}>Trophées remportés</Text>
                         <View style={{ marginTop: 10, flexDirection: 'row' }}>
                             <View style={{ alignItems: 'center' }}>
-                                <Text style={{ fontSize: 15, fontWeight: 'bold' }}>1</Text>
+                                <Text style={{ color: 'gray' }}>1</Text>
                                 <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#bdbfba'} />
                             </View>
                             <View style={{ alignItems: 'center' }}>
-                                <Text style={{ fontSize: 15, fontWeight: 'bold' }}>2</Text>
+                                <Text style={{ color: 'gray' }}>2</Text>
                                 <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#ffd700'} />
                             </View>
 
                             <View style={{ alignItems: 'center' }}>
-                                <Text style={{ fontSize: 15, fontWeight: 'bold' }}>0</Text>
+                                <Text style={{ color: 'gray' }}>0</Text>
                                 <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#cac5bf'} />
                             </View>
 
                             <View style={{ alignItems: 'center' }}>
-                                <Text style={{ fontSize: 15, fontWeight: 'bold' }}>2</Text>
+                                <Text style={{ color: 'gray' }}>2</Text>
                                 <Ionicons style={{ margin: 5, marginTop: 0 }} name='medal-outline' size={25} color={'#b07c6d'} />
                             </View>
                         </View>
                     </View>
                     <View>
-                        <Ionicons name='alert-circle' size={25} color={'orangered'} />
+                        <Ionicons name='alert-circle' size={20} color={'orangered'} />
                     </View>
                 </View>
-                <AccordionListItem title={
-                    <> <Ionicons style={{ margin: 5 }} name='trophy-outline' size={20} color={'#b07c6d'} />  <Text style={{ fontSize: 16, }}>Palmarès</Text>  </>}>
-                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Printemps 2021</Text>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>3ème place</Text>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', }}>
-                                <Ionicons style={{ margin: 5 }} name='medal-outline' size={25} color={'#b07c6d'} />
-                            </Text>
-                        </View>
-                        <View style={{ borderTopWidth: 1, width: "100%", borderColor: '#EFEFEF', padding: 10 }}>
-                            <AccordionListItem title={'Voir classement de la saison'}>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            1er <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>P.S.G</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            15V / 7D/ 0N
-                                        </Text>
+                <View style={{ paddingRight: 20, paddingLeft: 20, }}>
+                    <AccordionListItem title={
+                        <> <Ionicons style={{ margin: 5 }} name='trophy-outline' size={15} color={'#b07c6d'} />  <Text style={{ color: 'gray' }}>Palmarès</Text>  </>}>
+                        <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Printemps 2021</Text>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>3ème place</Text>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', }}>
+                                    <Ionicons style={{ margin: 5 }} name='medal-outline' size={25} color={'#b07c6d'} />
+                                </Text>
+                            </View>
+                            <View style={{ borderTopWidth: 1, width: "100%", borderColor: '#EFEFEF', padding: 10 }}>
+                                <AccordionListItem title={'Voir classement de la saison'}>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                1er <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>P.S.G</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                15V / 7D/ 0N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            2ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            12V / 5D/ 2N
-                                        </Text>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                2ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                12V / 5D/ 2N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            3ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            10V / 5D/ 2N
-                                        </Text>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                3ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                10V / 5D/ 2N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                            </AccordionListItem>
+                                </AccordionListItem>
 
-                            <AccordionListItem title={'Voir Liste des match'}>
-                                <View>
-                                    <View style={{
-                                        padding: 20,
-                                        borderBottomColor: 'lightgray',
-                                        borderBottomWidth: 1,
-                                        backgroundColor: "white",
-                                    }}>
-                                        <Text style={{ alignSelf: "center", fontSize: 18, fontWeight: "500", color: "black" }}>{'FootBall'}</Text>
-                                        <Text style={{ alignSelf: "center", color: "gray", marginTop: 10 }}>{'12/20/2021'}</Text>
-                                        <View style={{ flexDirection: "row", justifyContent: "space-evenly", marginTop: 20, alignItems: "center" }}>
-                                            <View style={{ alignItems: "center" }}>
-                                                <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d8_VfT-LVj79vN0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552364', cache: 'default' }} />
-                                                <Text style={{ fontWeight: "500", color: "black" }}>{'PSG'}</Text>
-                                            </View>
-                                            <View style={{ flexDirection: "row", }}>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{2}</Text>
+                                <AccordionListItem title={'Voir Liste des match'}>
+                                    <View>
+                                        <View style={{
+                                            padding: 20,
+                                            borderBottomColor: 'lightgray',
+                                            borderBottomWidth: 1,
+                                            backgroundColor: "white",
+                                        }}>
+                                            <Text style={{ alignSelf: "center", fontSize: 18, fontWeight: "500", color: "black" }}>{'FootBall'}</Text>
+                                            <Text style={{ alignSelf: "center", color: "gray", marginTop: 10 }}>{'12/20/2021'}</Text>
+                                            <View style={{ flexDirection: "row", justifyContent: "space-evenly", marginTop: 20, alignItems: "center" }}>
+                                                <View style={{ alignItems: "center" }}>
+                                                    <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d8_VfT-LVj79vN0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552364', cache: 'default' }} />
+                                                    <Text style={{ fontWeight: "500", color: "black" }}>{'PSG'}</Text>
                                                 </View>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>:</Text>
+                                                <View style={{ flexDirection: "row", }}>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{2}</Text>
+                                                    </View>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>:</Text>
+                                                    </View>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{1}</Text>
+                                                    </View>
                                                 </View>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{1}</Text>
+                                                <View style={{ alignItems: "center" }}>
+                                                    <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d2_j1j6qJsBq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552332', cache: 'default' }} />
+                                                    <Text style={{ fontWeight: "500", color: "black" }}>{'Marseille'}</Text>
                                                 </View>
-                                            </View>
-                                            <View style={{ alignItems: "center" }}>
-                                                <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d2_j1j6qJsBq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552332', cache: 'default' }} />
-                                                <Text style={{ fontWeight: "500", color: "black" }}>{'Marseille'}</Text>
                                             </View>
                                         </View>
                                     </View>
-                                </View>
 
-                            </AccordionListItem>
+                                </AccordionListItem>
+                            </View>
                         </View>
-                    </View>
 
-                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Hiver 2021</Text>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>6ème place</Text>
-                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', }}>
-                                <Ionicons style={{ margin: 5 }} name='medal-outline' size={25} color={'#cac5bf'} />
-                            </Text>
-                        </View>
-                        <View style={{ borderTopWidth: 1, width: "100%", borderColor: '#EFEFEF', padding: 10 }}>
-                            <AccordionListItem title={'Voir classement de la saison'}>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            1er <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>P.S.G</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            15V / 7D/ 0N
-                                        </Text>
+                        <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                            <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Hiver 2021</Text>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>6ème place</Text>
+                                <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', }}>
+                                    <Ionicons style={{ margin: 5 }} name='medal-outline' size={25} color={'#cac5bf'} />
+                                </Text>
+                            </View>
+                            <View style={{ borderTopWidth: 1, width: "100%", borderColor: '#EFEFEF', padding: 10 }}>
+                                <AccordionListItem title={'Voir classement de la saison'}>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                1er <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>P.S.G</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                15V / 7D/ 0N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            2ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            12V / 5D/ 2N
-                                        </Text>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                2ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                12V / 5D/ 2N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                                <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
-                                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            3ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
-                                        </Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
-                                        <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
-                                            10V / 5D/ 2N
-                                        </Text>
+                                    <View style={{ borderWidth: 1, width: "100%", borderColor: '#EFEFEF', borderTopWidth: 0 }}>
+                                        <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                3ème <Ionicons style={{ margin: 5 }} name='medal-outline' size={15} color={'#b07c6d'} />
+                                            </Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>Barcelone</Text>
+                                            <Text style={{ borderRightWidth: 1, padding: 5, borderColor: '#EFEFEF', flex: 1 }}>
+                                                10V / 5D/ 2N
+                                            </Text>
+                                        </View>
                                     </View>
-                                </View>
-                            </AccordionListItem>
+                                </AccordionListItem>
 
-                            <AccordionListItem title={'Voir Liste des match'}>
-                                <View>
-                                    <View style={{
-                                        padding: 20,
-                                        borderBottomColor: 'lightgray',
-                                        borderBottomWidth: 1,
-                                        backgroundColor: "white",
-                                    }}>
-                                        <Text style={{ alignSelf: "center", fontSize: 18, fontWeight: "500", color: "black" }}>{'FootBall'}</Text>
-                                        <Text style={{ alignSelf: "center", color: "gray", marginTop: 10 }}>{'12/20/2021'}</Text>
-                                        <View style={{ flexDirection: "row", justifyContent: "space-evenly", marginTop: 20, alignItems: "center" }}>
-                                            <View style={{ alignItems: "center" }}>
-                                                <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d8_VfT-LVj79vN0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552364', cache: 'default' }} />
-                                                <Text style={{ fontWeight: "500", color: "black" }}>{'PSG'}</Text>
-                                            </View>
-                                            <View style={{ flexDirection: "row", }}>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{2}</Text>
+                                <AccordionListItem title={'Voir Liste des match'}>
+                                    <View>
+                                        <View style={{
+                                            padding: 20,
+                                            borderBottomColor: 'lightgray',
+                                            borderBottomWidth: 1,
+                                            backgroundColor: "white",
+                                        }}>
+                                            <Text style={{ alignSelf: "center", fontSize: 18, fontWeight: "500", color: "black" }}>{'FootBall'}</Text>
+                                            <Text style={{ alignSelf: "center", color: "gray", marginTop: 10 }}>{'12/20/2021'}</Text>
+                                            <View style={{ flexDirection: "row", justifyContent: "space-evenly", marginTop: 20, alignItems: "center" }}>
+                                                <View style={{ alignItems: "center" }}>
+                                                    <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d8_VfT-LVj79vN0.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552364', cache: 'default' }} />
+                                                    <Text style={{ fontWeight: "500", color: "black" }}>{'PSG'}</Text>
                                                 </View>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>:</Text>
+                                                <View style={{ flexDirection: "row", }}>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{2}</Text>
+                                                    </View>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>:</Text>
+                                                    </View>
+                                                    <View>
+                                                        <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{1}</Text>
+                                                    </View>
                                                 </View>
-                                                <View>
-                                                    <Text style={{ fontSize: 25, fontWeight: "bold", padding: 5, color: "black", paddingTop: 0 }}>{1}</Text>
+                                                <View style={{ alignItems: "center" }}>
+                                                    <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d2_j1j6qJsBq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552332', cache: 'default' }} />
+                                                    <Text style={{ fontWeight: "500", color: "black" }}>{'Marseille'}</Text>
                                                 </View>
-                                            </View>
-                                            <View style={{ alignItems: "center" }}>
-                                                <Image style={{ height: 70, width: 70, marginBottom: 10, resizeMode: 'contain' }} defaultSource={require('../image/wainting.png')} source={{ uri: 'https://ik.imagekit.io/jimmyBull/580b57fcd9996e24bc43c4d2_j1j6qJsBq.png?ik-sdk-version=javascript-1.4.3&updatedAt=1643615552332', cache: 'default' }} />
-                                                <Text style={{ fontWeight: "500", color: "black" }}>{'Marseille'}</Text>
                                             </View>
                                         </View>
                                     </View>
-                                </View>
 
-                            </AccordionListItem>
+                                </AccordionListItem>
+                            </View>
                         </View>
-                    </View>
-                </AccordionListItem>
-                <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={{ paddingTop: 10 }}>
+                    </AccordionListItem>
+                </View>
+
+                <ScrollView showsHorizontalScrollIndicator={false} horizontal={true} style={{ paddingTop: 10, paddingRight: 20, paddingLeft: 20, }}>
                     <View style={{ flexDirection: 'row' }}>
-                        <View style={{ backgroundColor: 'whitesmoke', borderWidth: 1, borderColor: 'gray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
-                            <Text style={{ alignSelf: 'center' }}>FootBall</Text>
+                        <View style={{ borderWidth: 1, borderColor: 'lightgray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
+                            <Text style={{ alignSelf: 'center', color: 'gray' }}>FootBall</Text>
                         </View>
-                        <View style={{ backgroundColor: 'whitesmoke', borderWidth: 1, borderColor: 'gray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
-                            <Text style={{ alignSelf: 'center' }}>Tennis</Text>
+                        <View style={{ borderWidth: 1, borderColor: 'lightgray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
+                            <Text style={{ alignSelf: 'center', color: 'gray' }}>Tennis</Text>
                         </View>
-                        <View style={{ backgroundColor: 'whitesmoke', borderWidth: 1, borderColor: 'gray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
-                            <Text style={{ alignSelf: 'center' }}>Basketball</Text>
+                        <View style={{ borderWidth: 1, borderColor: 'lightgray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
+                            <Text style={{ alignSelf: 'center', color: 'gray' }}>Basketball</Text>
                         </View>
-                        <View style={{ backgroundColor: 'whitesmoke', borderWidth: 1, borderColor: 'gray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
-                            <Text style={{ alignSelf: 'center' }}>BaseBall</Text>
+                        <View style={{ borderWidth: 1, borderColor: 'lightgray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
+                            <Text style={{ alignSelf: 'center', color: 'gray' }}>BaseBall</Text>
                         </View>
-                        <View style={{ backgroundColor: 'whitesmoke', borderWidth: 1, borderColor: 'gray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
-                            <Text style={{ alignSelf: 'center' }}>Handball</Text>
+                        <View style={{ borderWidth: 1, borderColor: 'lightgray', padding: 5, borderRadius: 10, width: 80, alignItems: "center", margin: 5 }}>
+                            <Text style={{ alignSelf: 'center', color: 'gray' }}>Handball</Text>
                         </View>
                     </View>
                 </ScrollView>
-                <Text style={{ alignSelf: 'center', marginTop: 20, color: 'black', fontWeight: '600' }}>Printemps 2021</Text>
-                <View style={{ flexDirection: 'row', alignSelf: 'center', marginTop: 10 }}>
-                    <Text style={{ fontWeight: 'bold', color: 'black' }}>Paris Saint Germain:</Text>
-                    <Text style={{ marginLeft: 10, color: 'black' }}>15V / 3D / 0N</Text>
+                <Text style={{ color: 'black', alignSelf: 'center', marginTop: 20, }}>Paris Saint Germain:</Text>
+                <View style={{ flexDirection: 'row', flex: 1, flexWrap: "wrap", justifyContent: 'space-evenly' }}>
+                    <Text style={{ alignSelf: 'center', marginTop: 20, color: 'gray' }}>Printemps 2021</Text>
+                    <View style={{ flexDirection: 'row', alignSelf: 'center', marginTop: 10 }}>
+                        <Text style={{ marginLeft: 10, color: 'gray' }}>15V / 3D / 0N</Text>
+                    </View>
+                    <Text style={{ alignSelf: 'center', marginTop: 10, color: 'gray' }}>4ème place</Text>
                 </View>
-                <Text style={{ alignSelf: 'center', marginTop: 10, color: 'black', fontWeight: '600' }}>4ème place</Text>
-                <View style={{ flexDirection: 'row', flex: 1, flexWrap: "wrap", marginTop: 20, justifyContent: 'space-between' }}>
+                <View style={{ flexDirection: 'row', flex: 1, flexWrap: "wrap", marginTop: 20, justifyContent: 'space-evenly' }}>
                     <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
                         {
                             datas: imageData
                         }
                     )} style={{
-                        borderRadius: 5,
                         marginTop: 0,
-                        marginBottom: 10,
+                        marginBottom: 2
                     }}>
-                        <Image style={{ width: 100, height: 100, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', borderRadius: 5 }}
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
                             defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
-
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
                         {
                             datas: imageData
                         }
                     )} style={{
-                        borderRadius: 5,
-                        marginTop: 0,
-                        marginBottom: 10,
-                    }}>
-                        <Image style={{ width: 100, height: 100, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', borderRadius: 5 }}
-                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://images.fineartamerica.com/images-medium-large-5/4-soccer-player-kicking-ball-in-stadium-dmytro-aksonov.jpg', cache: 'default' }} />
 
+                        marginTop: 0,
+                        marginBottom: 2
+                    }}>
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
+                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
                         {
                             datas: imageData
                         }
                     )} style={{
-                        borderRadius: 5,
                         marginTop: 0,
-                        marginBottom: 10,
+                        marginBottom: 2
                     }}>
-                        <Image style={{ width: 100, height: 100, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', borderRadius: 5 }}
-                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://www.sportbible.com/cdn-cgi/image/width=1200,quality=70,format=jpeg,fit=contain,dpr=1/https%3A%2F%2Fs3-images.sportbible.com%2Fs3%2Fcontent%2F082ccc875faaad535ceae275c4515a26.png', cache: 'default' }} />
-
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
+                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
                         {
                             datas: imageData
                         }
                     )} style={{
-                        borderRadius: 5,
                         marginTop: 0,
-                        marginBottom: 10,
+                        marginBottom: 2
                     }}>
-                        <Image style={{ width: 100, height: 100, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', borderRadius: 5 }}
-                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.newyorker.com/photos/59095186019dfc3494e9dab5/master/w_2560%2Cc_limit/457771195-290.jpg', cache: 'default' }} />
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
+                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
+                        {
+                            datas: imageData
+                        }
+                    )} style={{
 
+                        marginTop: 0,
+                        marginBottom: 2
+                    }}>
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
+                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => navigation.navigate('SinglePost',
+                        {
+                            datas: imageData
+                        }
+                    )} style={{
+                        marginTop: 0,
+                        marginBottom: 2
+                    }}>
+                        <Image style={{ width: 140, height: 140, backgroundColor: "lightgray", position: "relative", zIndex: 1, resizeMode: 'cover', }}
+                            defaultSource={require('../image/wainting.png')} source={{ uri: 'https://media.istockphoto.com/photos/soccer-player-kicks-a-ball-picture-id1163749879?k=20&m=1163749879&s=170667a&w=0&h=9FFbqQv6ZZ_WXS-FzzPtkBqr0h2Y2d6GLpdYBVsfitc=', cache: 'default' }} />
                     </TouchableOpacity>
                 </View>
             </ScrollView>
