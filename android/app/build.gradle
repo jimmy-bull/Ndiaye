@@ -181,6 +181,14 @@ android {
 
         }
     }
+    signingConfigs {
+  release {
+    storeFile file('ndiaye.keystore')
+    storePassword System.console().readLine("\nKeystore password:")
+    keyAlias System.console().readLine("\nAlias: ")
+    keyPassword System.console().readLine("\Alias password: ")
+   }
+}
 }
 
 dependencies {
