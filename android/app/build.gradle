@@ -154,6 +154,14 @@ android {
             keyPassword 'android'
         }
     }
+// signingConfigs {
+//     release {
+//     storeFile file('ndiaye.keystore')
+//     storePassword System.console().readLine("\nKeystore password:")
+//     keyAlias System.console().readLine("\nAlias: ")
+//     keyPassword System.console().readLine("\Alias password: ")
+//    }
+// }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
@@ -181,14 +189,7 @@ android {
 
         }
     }
-    signingConfigs {
-  release {
-    storeFile file('ndiaye.keystore')
-    storePassword System.console().readLine("\nKeystore password:")
-    keyAlias System.console().readLine("\nAlias: ")
-    keyPassword System.console().readLine("\Alias password: ")
-   }
-}
+   
 }
 
 dependencies {
